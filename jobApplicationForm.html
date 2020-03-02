@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cafe Job Application</title>
+</head>
+<body>
+	<div class="mainContent">
+		<h1>Cafe Job Application</h1>
+		<p>We are looking to hire servers, bussers, and dishwashers!</p>
+		<div class="formClass">
+			<form name="input" action="http://gclass.alexburner.com/formtest.php" method="post">
+				<fieldset>
+					<legend>Basic Information</legend>
+					<label>Full Name:</label><input type="text" name="name"/><br/><br/>
+					<label>Email:</label><input type="email" name="_replyto"><br/><br/>
+					<label>Date of Birth</label>
+					<input type="date" name="birthday" min="1990-01-01" max="2020-12-31">
+				</fieldset>
+				<fieldset>
+					<legend>Essay</legend>
+					<label>Please tell why you are applying to this job:</label><br/>
+					<textarea name="essay">Text Here</textarea><br/>
+				</fieldset>
+				<fieldset>
+					<legend>More Info</legend>
+					<label>What position are you applying for?</label><br/>
+					<input type="radio" name="position" value="server">Server<br/>
+					<input type="radio" name="position" value="busser">Busser<br/>
+					<input type="radio" name="position" value="dishwasher">Dishwasher<br/>
+					<br/>
+					<label>What days are you available to work?</label>
+					<br/>
+					<input type="checkbox" name="days" value="monday">Monday<br/>
+					<input type="checkbox" name="days" value="tuesday">Tuesday<br/>
+					<input type="checkbox" name="days" value="wednesday">Wednesday<br/>
+					<input type="checkbox" name="days" value="thursday">Thursday<br/>
+					<input type="checkbox" name="days" value="friday">Friday<br/>
+					<input type="checkbox" name="days" value="saturday">Saturday<br/>
+					<input type="checkbox" name="days" value="sunday">Sunday<br/>
+					<br/>
+					<label>Which location do you prefer?</label>
+					<br/>
+					<select name="city">
+						<optgroup label="Seattle">
+							<option name="location" value="capitol hill">Capitol Hill</option>
+							<option name="location" value="ballard">Ballard</option>
+							<option name="location" value="fremont">Fremont</option>
+						</optgroup>
+					</select>
+				</fieldset>
+				<br>
+				<input type="submit" value="Submit Form">
+			</form>
+	</div>
+</body>
+</html>
